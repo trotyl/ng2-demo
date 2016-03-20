@@ -33,7 +33,7 @@ export const HeroesComponent = (
             this._router.navigate(['HeroDetail', { id: this.selectedHero.id }]);
         }
     })
-)
+);
 
 
 /*

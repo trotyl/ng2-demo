@@ -26,7 +26,7 @@ export const HeroDetailComponent = (
             window.history.back();
         }
     })
-)
+);
  
 
 
