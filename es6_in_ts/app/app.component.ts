@@ -6,24 +6,23 @@ import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 
-export const AppComponent = 
-RouteConfig([
-  {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: DashboardComponent,
-    useAsDefault: true
-  },
-  {
-    path: '/detail/:id',
-    name: 'HeroDetail',
-    component: HeroDetailComponent
-  },
-  {
-    path: '/heroes',
-    name: 'Heroes',
-    component: HeroesComponent
-  }
+export const AppComponent = RouteConfig([
+    {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: DashboardComponent,
+        useAsDefault: true
+    },
+    {
+        path: '/detail/:id',
+        name: 'HeroDetail',
+        component: HeroDetailComponent
+    },
+    {
+        path: '/heroes',
+        name: 'Heroes',
+        component: HeroesComponent
+    }
 ])(
     Component({
         selector: 'my-app',
