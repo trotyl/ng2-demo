@@ -10,8 +10,23 @@
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <!-- 2. Configure SystemJS -->
-    <script src="dist/bundle.js"></script>
+    <script>
+      System.config({
+        packages: {        
+          dist: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('dist/main')
+            .then(null, console.error.bind(console));
+    </script>
   </head>
   <!-- 3. Display the application -->
   <body>

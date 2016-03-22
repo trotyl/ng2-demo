@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"npm run build\" \"npm run lite\" ",
-    "build": "npm run babel; npm run browserify",
+    "build": "npm run babel",
     "babel": "babel app -d dist",
-    "browserify": "browserify dist/main.js -o dist/bundle.js",
     "lite": "lite-server",
     "postinstall": "typings install"
   },
