@@ -1,4 +1,4 @@
 typings/
 node_modules/
-*.js
+dist/
 *.js.map
